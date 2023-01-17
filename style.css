@@ -1,0 +1,97 @@
+html, body, small {
+  font-family: "Hanken Grotesk", sans-serif, Arial;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* :not(.nav-link) {
+  margin: auto;
+  padding-left: 5px;
+}
+
+nav, h1, button {
+  font-family: 'Unbounded', cursive;
+}
+
+.new-text {
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.image-display {
+  width: 450px;
+}
+
+nav {
+  background: #0091ff;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.cyrus {
+  text-decoration: none;
+  color: green;
+}
+
+.image-select {
+  height: 200px;
+}
+
+.dot, .dot-small {
+  background-color: #00ffee;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot1, .dot1-small {
+  background-color: #e189d1;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2, .dot2-small {
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot3, .dot3-small {
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,246,183,1) 10%, rgba(176,242,255,1) 50%, rgba(255,144,252,1) 90%, rgba(255,255,255,1) 100%);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot, .dot1, .dot2, .dot3 {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid gray;
+  height: 40px;
+  width: 40px;
+}
+
+.dot-small, .dot1-small, .dot2-small, .dot3-small {
+  cursor: default;
+  display: inline-block;
+  border: 1px solid gray;
+  height: 16px;
+  width: 16px;
+}

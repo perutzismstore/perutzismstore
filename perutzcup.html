@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Perutz&trade; Cup - Perutzism Store</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" href="/logo/PS.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/logo/PS-Reversed.png" alt="Logo" width="30" height="24">  
+        Perutzism Store
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/toothpaster.html">Toothpaster</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/perutzcup.html">Perutz Cup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item" style="text-align:right;">
+            <a class="nav-link" href="/cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <br>
+  
+  <center>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="added-cart-alert" style="display:none;">
+      Added to cart! You have added <strong>1x Perutz Cup</strong>.
+    </div>
+    <h1>Perutz&trade; Cup</h1><br>
+    <span class="price">$6.43</span><br><br>
+    <img src="CyrusCup.png" class="image-select">
+    <br><br><button type="button" class="btn btn-primary" onclick="addToCart('perutzCup')">Add To Cart</button>
+    <br><br>
+  </center>
+
+  <i><small>Product enlarged to show details, and product may not be exactly as shown.</small></i><br>
+  <small>&copy;2023 by Perutzy Studios&trade;. All Rights Reserved.</small>
+  <script src="/addToCart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
