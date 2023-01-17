@@ -31,9 +31,9 @@ function addToCart(item) {
   
   if (item == "perutzCup") {
     if (cart === undefined || cart === null || cart.length === 0) {
-      localStorage.setItem('cart', "<img src='/CyrusCup.png' height=16> 1x Perutz Cup<br>");
+      localStorage.setItem('cart', "<img src='/ProductColors/CyrusCup.png' height=16> 1x Perutz Cup<br>");
     } else {
-      localStorage.setItem('cart', "<img src='/CyrusCup.png' height=16> 1x Perutz Cup<br>" + localStorage.getItem('cart'));
+      localStorage.setItem('cart', "<img src='/ProductColors/CyrusCup.png' height=16> 1x Perutz Cup<br>" + localStorage.getItem('cart'));
     }
   } else if (item == "toothpaster") {
     if (cart === undefined || cart === null || cart.length === 0) {

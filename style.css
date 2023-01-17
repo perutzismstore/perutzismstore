@@ -95,3 +95,12 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,246,183,1) 1
   height: 16px;
   width: 16px;
 }
+
+#added-cart-alert {
+  opacity: 1;
+  transition: opacity 1s; 
+}
+
+#added-cart-alert.fade {
+  opacity: 0; 
+}
