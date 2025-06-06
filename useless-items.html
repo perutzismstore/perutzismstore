@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Cart - Perutzism Store</title>
+  <title>Useless Items - Perutzism Store</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="icon" href="/logo/PS.png">
@@ -12,9 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="getCart()">
+<body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
@@ -26,20 +25,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/toothpaster.html">Toothpaster</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/useless-items.html">Useless Items</a>
-          </li> 
+            <a class="nav-link active" aria-current="page" href="/useless-items.html">Useless Items</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item" style="text-align:right;">
-            <a class="nav-link active" aria-current="page" href="/cart.html">Cart</a>
+            <a class="nav-link" href="/cart.html">Cart</a>
           </li>
         </ul>
       </div>
@@ -47,25 +46,22 @@
   </nav>
   <hr>
   <br>
+  
   <center>
-    <h1>Your cart here.</h1><br><br>
-    <div id="null-text">
-      <h2><img src="https://core.myblueprint.ca/Client/Images/EmptyState/icon_desertEmpty.svg"><br>It's like a desert in here...</h2>
-      <h5>Add some items to your cart.</h5>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="added-cart-alert" style="display:none;">
+      Added to cart! You have added <strong>1x Perutz Cup</strong>.
     </div>
-    <div id="cart-div" style="display:none;">
-      <button type="button" class="btn btn-primary" id="reset-btn" onclick="resetCart()">&nbsp;&nbsp;Reset Cart</button><br><br>
-    <div id="cart">
-    </div><br><br>
-    <button type="button" class="btn btn-primary" id="checkout-btn" onclick="resetCart()">&nbsp;&nbsp;Checkout</button>
-    </div>
-  <br><br>
+    <h1>200mL Series&trade;</h1><br>
+    <a href="/200ml-series.html">The Sandpaster&reg;</a><br>
+    <a href="/200ml-series.html">The Sand Scraper&reg;</a><br><br>
+    
+    <h1>Perutz&trade; Cup</h1><br>
+    <a href="/perutzcup.html">Perutz&trade; Cup</a>
+    
+    <br><br>
   </center>
-  <br><br>
 
   <small>&copy;2023 by Perutzy Studios&trade;. All Rights Reserved.</small>
-  
-  <script src="/addToCart.js"></script>
   <script src="/inspect.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="/service-worker.js"></script>
